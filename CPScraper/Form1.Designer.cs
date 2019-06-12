@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.datumPicker = new System.Windows.Forms.DateTimePicker();
             this.VlakCheckbox = new System.Windows.Forms.CheckBox();
             this.BusCheckbox = new System.Windows.Forms.CheckBox();
@@ -37,115 +38,104 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.DoTextBox = new System.Windows.Forms.TextBox();
-            this.TempBrowser = new System.Windows.Forms.WebBrowser();
+            this.MainBrowser = new System.Windows.Forms.WebBrowser();
             this.labelTest = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // datumPicker
             // 
-            this.datumPicker.CustomFormat = "";
-            this.datumPicker.Location = new System.Drawing.Point(12, 89);
+            resources.ApplyResources(this.datumPicker, "datumPicker");
+            this.datumPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datumPicker.Name = "datumPicker";
-            this.datumPicker.Size = new System.Drawing.Size(175, 20);
-            this.datumPicker.TabIndex = 0;
-            this.datumPicker.Value = new System.DateTime(2019, 2, 16, 0, 0, 0, 0);
+            this.datumPicker.Value = new System.DateTime(2019, 6, 12, 0, 0, 0, 0);
             // 
             // VlakCheckbox
             // 
-            this.VlakCheckbox.AutoSize = true;
-            this.VlakCheckbox.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.VlakCheckbox, "VlakCheckbox");
+            this.VlakCheckbox.Checked = true;
+            this.VlakCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.VlakCheckbox.Name = "VlakCheckbox";
-            this.VlakCheckbox.Size = new System.Drawing.Size(47, 17);
-            this.VlakCheckbox.TabIndex = 1;
-            this.VlakCheckbox.Text = "Vlak";
             this.VlakCheckbox.UseVisualStyleBackColor = true;
             // 
             // BusCheckbox
             // 
-            this.BusCheckbox.AutoSize = true;
-            this.BusCheckbox.Location = new System.Drawing.Point(65, 12);
+            resources.ApplyResources(this.BusCheckbox, "BusCheckbox");
             this.BusCheckbox.Name = "BusCheckbox";
-            this.BusCheckbox.Size = new System.Drawing.Size(44, 17);
-            this.BusCheckbox.TabIndex = 2;
-            this.BusCheckbox.Text = "Bus";
             this.BusCheckbox.UseVisualStyleBackColor = true;
             // 
             // MHDCheckbox
             // 
-            this.MHDCheckbox.AutoSize = true;
-            this.MHDCheckbox.Location = new System.Drawing.Point(115, 12);
+            resources.ApplyResources(this.MHDCheckbox, "MHDCheckbox");
             this.MHDCheckbox.Name = "MHDCheckbox";
-            this.MHDCheckbox.Size = new System.Drawing.Size(51, 17);
-            this.MHDCheckbox.TabIndex = 3;
-            this.MHDCheckbox.Text = "MHD";
             this.MHDCheckbox.UseVisualStyleBackColor = true;
             // 
             // HladajButton
             // 
-            this.HladajButton.Location = new System.Drawing.Point(12, 115);
+            resources.ApplyResources(this.HladajButton, "HladajButton");
             this.HladajButton.Name = "HladajButton";
-            this.HladajButton.Size = new System.Drawing.Size(175, 69);
-            this.HladajButton.TabIndex = 4;
-            this.HladajButton.Text = "Hľadaj";
             this.HladajButton.UseVisualStyleBackColor = true;
             this.HladajButton.Click += new System.EventHandler(this.HladajButton_Click);
             // 
             // ZTextBox
             // 
-            this.ZTextBox.Location = new System.Drawing.Point(46, 35);
+            resources.ApplyResources(this.ZTextBox, "ZTextBox");
             this.ZTextBox.Name = "ZTextBox";
-            this.ZTextBox.Size = new System.Drawing.Size(141, 20);
-            this.ZTextBox.TabIndex = 5;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Z:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 61);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Do:";
             // 
             // DoTextBox
             // 
-            this.DoTextBox.Location = new System.Drawing.Point(46, 58);
+            resources.ApplyResources(this.DoTextBox, "DoTextBox");
             this.DoTextBox.Name = "DoTextBox";
-            this.DoTextBox.Size = new System.Drawing.Size(141, 20);
-            this.DoTextBox.TabIndex = 9;
             // 
-            // TempBrowser
+            // MainBrowser
             // 
-            this.TempBrowser.Location = new System.Drawing.Point(193, 12);
-            this.TempBrowser.MinimumSize = new System.Drawing.Size(20, 20);
-            this.TempBrowser.Name = "TempBrowser";
-            this.TempBrowser.ScriptErrorsSuppressed = true;
-            this.TempBrowser.Size = new System.Drawing.Size(774, 550);
-            this.TempBrowser.TabIndex = 11;
+            resources.ApplyResources(this.MainBrowser, "MainBrowser");
+            this.MainBrowser.Name = "MainBrowser";
+            this.MainBrowser.ScriptErrorsSuppressed = true;
             // 
             // labelTest
             // 
-            this.labelTest.AutoSize = true;
-            this.labelTest.Location = new System.Drawing.Point(24, 224);
+            resources.ApplyResources(this.labelTest, "labelTest");
             this.labelTest.Name = "labelTest";
-            this.labelTest.Size = new System.Drawing.Size(0, 13);
-            this.labelTest.TabIndex = 12;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 574);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelTest);
-            this.Controls.Add(this.TempBrowser);
+            this.Controls.Add(this.MainBrowser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DoTextBox);
             this.Controls.Add(this.label1);
@@ -155,9 +145,11 @@
             this.Controls.Add(this.BusCheckbox);
             this.Controls.Add(this.VlakCheckbox);
             this.Controls.Add(this.datumPicker);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,8 +166,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox DoTextBox;
-        private System.Windows.Forms.WebBrowser TempBrowser;
+        private System.Windows.Forms.WebBrowser MainBrowser;
         private System.Windows.Forms.Label labelTest;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

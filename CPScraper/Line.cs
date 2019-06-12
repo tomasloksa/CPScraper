@@ -15,5 +15,14 @@ namespace CPScraper
             stops.Add(Tuple.Create(name, time));
         }
 
+        public Tuple<string, string> GetStop(int id)
+        {
+            return stops[id];
+        }
+
+        public int GetNumOfStops()
+        {
+            return stops.Count;
+        }
     }
 }
